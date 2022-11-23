@@ -1,0 +1,22 @@
+.card {
+  margin: 30px;
+}
+div {
+  color: white;
+  background: black;
+}
+img {
+  background: black;
+  height: 45vh;
+}
+.card {
+  background: black;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.row {
+  justify-content: center;
+}

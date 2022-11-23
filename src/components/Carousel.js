@@ -15,7 +15,7 @@ function Carousel() {
             className="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-none d-md-block">
             <h5>Lights Of Rain</h5>
             <p>
               Embrace The Rain Of Love In The City Lights And NightSky With
@@ -29,7 +29,7 @@ function Carousel() {
             className="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-none d-md-block">
             <h5>A Morning Of Hope</h5>
             <p>Wake Up In The Mist Of Faith With A Kiss Of Hope..</p>
           </div>
@@ -40,7 +40,7 @@ function Carousel() {
             className="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-none d-md-block">
             <h5>In The Game Of Life</h5>
             <p>
               A Place As Ordinary As A Home, Yet All Of Our Life, We Crave To
