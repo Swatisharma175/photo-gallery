@@ -10,13 +10,17 @@ function Footer() {
             <div className="col-lg-4 col-md-6">
               <h5 className="h1 text-white">Contact Us</h5>
               <p className="small text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt.
+                Art Gallery Of Dreams - Find Abstract Authentic Cubic Art. To
+                Visit The Complete Gallery, Visit{" "}
+                <a href="https://www.deviantart.com/abhideepghosh">
+                  {" "}
+                  Our Deviant Art Page
+                </a>
               </p>
               <p className="small text-muted mb-0">
                 &copy; Copyrights. All rights reserved.{" "}
                 <a className="text-primary" href="/">
-                  Bootstrapious.com
+                  Dreamer's Lane
                 </a>
               </p>
             </div>
@@ -57,8 +61,10 @@ function Footer() {
             <div className="col-lg-4 col-md-6">
               <h5 className="text-white mb-3">Newsletter</h5>
               <p className="small text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt.
+                A newsletter is a printed or electronic report containing news
+                concerning the activities of a business or an organization that
+                is sent to its members, customers, employees or other
+                subscribers.
               </p>
               <form action="/">
                 <div className="input-group mb-3">
