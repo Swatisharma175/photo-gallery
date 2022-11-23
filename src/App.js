@@ -1,5 +1,6 @@
 import "./App.css";
 import Carousel from "./components/Carousel";
+import Footer from "./components/Footer";
 import Grid from "./components/Grid";
 import NavBar from "./components/NavBar";
 
@@ -10,6 +11,7 @@ function App() {
       <Carousel />
       <h2>Trending In Deviant Community</h2>
       <Grid />
+      <Footer />
     </div>
   );
 }
