@@ -27,12 +27,9 @@ a:focus {
 }
 
 footer {
-  background: #301934;
+  background: #151416;
 }
 
-/* ==========================================
-      CUSTOM UTILS CLASSES
-    ========================================== */
 body,
 html {
   height: 100%;
