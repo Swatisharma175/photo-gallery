@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FormControl.css";
 
 function FormControl() {
+  const [emailAddress, setEmailAddress] = useState("");
+  const [text, setText] = useState("");
+
   return (
     <div className="container">
       <div className="mb-3">
@@ -17,13 +20,16 @@ function FormControl() {
       </div>
       <div className="mb-3">
         <label for="exampleFormControlTextarea1" className="form-label">
-          Example textarea
+          Your Message
         </label>
         <textarea
           className="form-control"
           id="exampleFormControlTextarea1"
           rows="10"
         ></textarea>
+        <button type="button" class="btn btn-dark">
+          &#128508; Send Message &#128508;
+        </button>
       </div>
     </div>
   );
