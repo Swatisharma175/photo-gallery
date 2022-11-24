@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import "./FormControl.css";
 
 function FormControl() {
-  const [emailAddress, setEmailAddress] = useState("");
+  // const [emailAddress, setEmailAddress] = useState("");
   const [text, setText] = useState("");
+
+  const messageTyper = (event) => {
+    setText(event.target.value);
+    console.log(event.target.value);
+  };
 
   return (
     <div className="container">
@@ -25,9 +30,14 @@ function FormControl() {
         <textarea
           className="form-control"
           id="exampleFormControlTextarea1"
+          value={text}
           rows="10"
+          onChange={messageTyper}
         ></textarea>
-        <button type="button" class="btn btn-dark">
+        <h6>Preview Of Mail</h6>
+        <br />
+        <p>{text}</p>
+        <button type="button" className="btn btn-dark">
           &#128508; Send Message &#128508;
         </button>
       </div>

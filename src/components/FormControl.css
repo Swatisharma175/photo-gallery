@@ -6,3 +6,14 @@
 button {
   margin-top: 25px;
 }
+
+.form-control {
+  color: white;
+}
+.form-control:focus {
+  color: white;
+}
+
+h6 {
+  margin-top: 20px;
+}
