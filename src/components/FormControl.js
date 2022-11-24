@@ -15,10 +15,16 @@ function FormControl() {
     console.log(event.target.value);
   };
 
+  const clearMessage = () => {
+    setEmailAddress("");
+    setText("");
+    alert("Mail Sent!");
+  };
+
   return (
     <div className="container">
       <div className="mb-3">
-        <label for="exampleFormControlInput1" className="form-label">
+        <label htmlFor="exampleFormControlInput1" className="form-label">
           Email address
         </label>
         <input
@@ -31,7 +37,7 @@ function FormControl() {
         />
       </div>
       <div className="mb-3">
-        <label for="exampleFormControlTextarea1" className="form-label">
+        <label htmlFor="exampleFormControlTextarea1" className="form-label">
           Your Message
         </label>
         <textarea
@@ -45,7 +51,7 @@ function FormControl() {
         <br />
         <p>Email: {emailAddress}</p>
         <p>Message: {text}</p>
-        <button type="button" className="btn btn-dark">
+        <button type="button" className="btn btn-dark" onClick={clearMessage}>
           &#128508; Send Message &#128508;
         </button>
       </div>

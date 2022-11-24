@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 
 function Footer() {
+  const [newsLetter, setNewsLetter] = useState("");
+
+  const emailType = (event) => {
+    setNewsLetter(event.target.value);
+  };
+
+  const clearMessage = () => {
+    alert(`Dear ${newsLetter}, You Are Now Subscribed To Our NewsLetter!`);
+    setNewsLetter("");
+  };
+
   return (
     <div>
       <footer className="w-100 py-4 flex-shrink-0">
@@ -74,14 +85,16 @@ function Footer() {
                     placeholder="Recipient's username"
                     aria-label="Recipient's username"
                     aria-describedby="button-addon2"
+                    value={newsLetter}
+                    onChange={emailType}
                   />
                   <button
                     className="btn btn-primary"
                     id="button-addon2"
                     type="button"
+                    onClick={clearMessage}
                   >
                     &rarr;
-                    {/* <span>&rarr;</span> */}
                   </button>
                 </div>
               </form>
