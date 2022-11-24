@@ -9,6 +9,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <br />
+      <h2>The Gallery Of Dreams..</h2>
+      <br />
       <Carousel />
       <h2>Trending In Deviant Community</h2>
       <Grid />

@@ -41,3 +41,6 @@ h2 {
     transform: rotate(360deg);
   }
 }
+.App {
+  background: url("https://images.pond5.com/space-stars-4k-universe-flickering-footage-084866431_prevstill.jpeg");
+}

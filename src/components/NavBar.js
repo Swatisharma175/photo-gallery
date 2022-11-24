@@ -2,24 +2,11 @@ import React from "react";
 import "./NavBar.css";
 function NavBar() {
   return (
-    <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          Dreamer's Lane
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
+    <header class="text-center text-white py-5">
+      <h1 class="display-4 font-weight-bold mb-4">Dreamer's Lane</h1>
+      <h3>Welcome To The World Of Imagination...</h3>
+      <br />
+    </header>
   );
 }
 
