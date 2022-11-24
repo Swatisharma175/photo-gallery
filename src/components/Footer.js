@@ -80,7 +80,8 @@ function Footer() {
                     id="button-addon2"
                     type="button"
                   >
-                    <span>&rarr;</span>
+                    &rarr;
+                    {/* <span>&rarr;</span> */}
                   </button>
                 </div>
               </form>

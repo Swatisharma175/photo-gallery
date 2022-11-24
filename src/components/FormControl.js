@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import "./FormControl.css";
 
 function FormControl() {
-  // const [emailAddress, setEmailAddress] = useState("");
+  const [emailAddress, setEmailAddress] = useState("");
   const [text, setText] = useState("");
 
   const messageTyper = (event) => {
     setText(event.target.value);
+    // console.log(event.target.value);
+  };
+
+  const emailTyper = (event) => {
+    setEmailAddress(event.target.value);
     console.log(event.target.value);
   };
 
@@ -21,6 +26,8 @@ function FormControl() {
           className="form-control"
           id="exampleFormControlInput1"
           placeholder="name@example.com"
+          value={emailAddress}
+          onChange={emailTyper}
         />
       </div>
       <div className="mb-3">
@@ -36,7 +43,8 @@ function FormControl() {
         ></textarea>
         <h6>Preview Of Mail</h6>
         <br />
-        <p>{text}</p>
+        <p>Email: {emailAddress}</p>
+        <p>Message: {text}</p>
         <button type="button" className="btn btn-dark">
           &#128508; Send Message &#128508;
         </button>
